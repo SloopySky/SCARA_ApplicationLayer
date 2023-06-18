@@ -1,1 +1,5 @@
 add_subdirectory(Unity)
+
+add_library(StepMotorTest HwAbstractionTest/StepMotorTest/StepMotorTest.c)
+target_include_directories(StepMotorTest PRIVATE HwAbstractionTest/StepMotorTest)
+target_link_libraries(StepMotorTest StepMotor unity)

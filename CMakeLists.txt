@@ -9,6 +9,8 @@ endif()
 
 
 add_subdirectory(Common)
+add_subdirectory(FirmwareInterface)
+add_subdirectory(HwAbstraction)
 
 
 if(UNIT_TESTING)
